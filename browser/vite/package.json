@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "vite"
+    "dev": "vite --open"
   },
   "devDependencies": {
     "vite": "^3.2.3"
