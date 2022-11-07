@@ -4,7 +4,10 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: 'standard-with-typescript',
+  extends: [
+    'standard-with-typescript', 
+    'prettier'  // Make sure to put it last. See https://github.com/prettier/eslint-config-prettier#installation
+  ],
   overrides: [
   ],
   parserOptions: {
