@@ -16,6 +16,8 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
   },
-  rules: {},
+  rules: {
+    "import/order": ["error", { alphabetize: { order: "asc" } }],
+  },
   ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
 };

@@ -1,6 +1,6 @@
 import path from "path";
-import { Configuration } from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import { Configuration } from "webpack";
 import {} from "webpack-dev-server";
 
 const config: Configuration = {
