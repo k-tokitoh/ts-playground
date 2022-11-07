@@ -1,3 +1,5 @@
+const { readGitignoreFiles } = require("eslint-gitignore");
+
 module.exports = {
   env: {
     browser: true,
@@ -15,4 +17,5 @@ module.exports = {
     project: "./tsconfig.json",
   },
   rules: {},
+  ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
 };
