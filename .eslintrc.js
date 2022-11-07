@@ -16,8 +16,10 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
   },
+  plugins: ["autofix"],
   rules: {
     "import/order": ["error", { alphabetize: { order: "asc" } }],
+    "autofix/no-unused-vars": "error",
   },
   ignorePatterns: readGitignoreFiles({ cwd: __dirname }),
 };
